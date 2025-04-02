@@ -36,8 +36,8 @@ class SendDailyEmails extends Command
         $utcMinute = $utcNow->minute;
 
         $matchingTimezones = Timezone::whereRaw("
-            ((? + offset_hours + FLOOR(offset_minutes / 60)) % 24) = 13
-            AND ((? + offset_minutes) % 60) = 45
+            ((? + offset_hours + FLOOR(offset_minutes / 60)) % 24) = 17
+            AND ((? + offset_minutes) % 60) = 0
         ", [$utcHour, $utcMinute])->get();
 
         if ($matchingTimezones->isEmpty()) {
