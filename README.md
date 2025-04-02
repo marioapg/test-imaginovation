@@ -9,4 +9,4 @@ This is a fresh Laravel project. To get started, follow these steps:
 
 If you want to watch the scheduled tasks, you can run `php artisan schedule:list`.
 
-After that, you should be able to navigate to `http://localhost:8000` in your browser and see the Laravel welcome page.
+After that, you should be able to navigate to `http://127.0.0.1:8000` in your browser and see the Laravel welcome page.
